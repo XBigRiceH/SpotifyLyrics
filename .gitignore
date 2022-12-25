@@ -1,1 +1,7 @@
 /venv/
+/src/dist/
+/src/build/
+/src/resources/ui/
+/src/config.yml
+/src/SpotifyLyrics2.spec
+/src/SpotifyLyrics.spec

@@ -6,9 +6,9 @@ import axios from 'axios'
 import locale from 'element-ui/lib/locale/lang/en'
 
 Vue.prototype.axios = axios;
-Vue.use(ElementUI, { locale });
+Vue.use(ElementUI, {locale});
 
 new Vue({
-  el: '#app',
-  render: h => h(App)
+    el: '#app',
+    render: h => h(App)
 });

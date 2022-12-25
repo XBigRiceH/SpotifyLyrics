@@ -25,14 +25,17 @@
         </el-switch>
       </el-form-item>
       <el-form-item label="Background color">
-        <el-color-picker v-model="backgroundcolor" size="medium" :show-alpha="true" color-format="rgb" @change="updateBackgroundColor"></el-color-picker>
+        <el-color-picker v-model="backgroundcolor" :show-alpha="true" color-format="rgb" size="medium"
+                         @change="updateBackgroundColor"></el-color-picker>
       </el-form-item>
       <el-divider content-position="left">Text Settings</el-divider>
       <el-form-item label="Text color">
-        <el-color-picker v-model="fontcolor" size="medium" :show-alpha="false" color-format="rgb" @change="updateFontColor"></el-color-picker>
+        <el-color-picker v-model="fontcolor" :show-alpha="false" color-format="rgb" size="medium"
+                         @change="updateFontColor"></el-color-picker>
       </el-form-item>
       <el-form-item label="Text-stroke color">
-        <el-color-picker v-model="strokecolor" size="medium" :show-alpha="false" color-format="rgb" @change="updateStrokeColor"></el-color-picker>
+        <el-color-picker v-model="strokecolor" :show-alpha="false" color-format="rgb" size="medium"
+                         @change="updateStrokeColor"></el-color-picker>
       </el-form-item>
       <el-form-item label="Font family">
         <el-select v-model="form['font-family']" filterable>
@@ -119,7 +122,7 @@ export default {
     document.title = 'SpotifyLyrics Settings'
   },
   methods: {
-    submit(){
+    submit() {
       if (!this.form["client-id"]) {
         this.$message.warning("Invalid client id")
         return
@@ -134,7 +137,7 @@ export default {
       }
       axios.request({
         method: 'post',
-        url:'http://127.0.0.1:60001/update_settings',
+        url: 'http://127.0.0.1:60001/update_settings',
         data: this.form
       }).then((res) => {
         if (res.data.success) {
@@ -149,16 +152,16 @@ export default {
       let transparency = Number(this.backgroundcolor.split(",")[3].split(")")[0].replace(" ", ""))
       if (transparency < 0.15 || transparency > 1.0) {
         this.$message.warning("Transparency should be above 0.15 and below 1.0")
-        this.form['background-color']={
+        this.form['background-color'] = {
           r: this.backgroundcolor.split(",")[0].split("(")[1],
           g: this.backgroundcolor.split(",")[1].substring(1),
           b: this.backgroundcolor.split(",")[2].substring(1).split(")")[0],
           a: 0.15
         }
-        this.backgroundcolor = "rgb("+this.form["background-color"].r+","+this.form["background-color"].g+","+this.form["background-color"].b+",0.15)"
+        this.backgroundcolor = "rgb(" + this.form["background-color"].r + "," + this.form["background-color"].g + "," + this.form["background-color"].b + ",0.15)"
         return
       }
-      this.form['background-color']={
+      this.form['background-color'] = {
         r: this.backgroundcolor.split(",")[0].split("(")[1],
         g: this.backgroundcolor.split(",")[1].substring(1),
         b: this.backgroundcolor.split(",")[2].substring(1).split(")")[0],
@@ -166,14 +169,14 @@ export default {
       }
     },
     updateFontColor() {
-      this.form['font-color']={
+      this.form['font-color'] = {
         r: this.fontcolor.split(",")[0].split("(")[1],
         g: this.fontcolor.split(",")[1].substring(1),
         b: this.fontcolor.split(",")[2].substring(1).split(")")[0]
       }
     },
     updateStrokeColor() {
-      this.form["font-effect-color"]={
+      this.form["font-effect-color"] = {
         r: this.strokecolor.split(",")[0].split("(")[1],
         g: this.strokecolor.split(",")[1].substring(1),
         b: this.strokecolor.split(",")[2].substring(1).split(")")[0]
@@ -182,9 +185,9 @@ export default {
     get_settings() {
       axios.get("http://127.0.0.1:60001/settings").then((data) => {
         this.form = data.data
-        this.fontcolor = "rgb("+this.form["font-color"].r+","+this.form["font-color"].g+","+this.form["font-color"].b+")"
-        this.strokecolor = "rgb("+this.form["font-effect-color"].r+","+this.form["font-effect-color"].g+","+this.form["font-effect-color"].b+")"
-        this.backgroundcolor = "rgb("+this.form["background-color"].r+","+this.form["background-color"].g+","+this.form["background-color"].b+","+this.form['background-color'].a+")"
+        this.fontcolor = "rgb(" + this.form["font-color"].r + "," + this.form["font-color"].g + "," + this.form["font-color"].b + ")"
+        this.strokecolor = "rgb(" + this.form["font-effect-color"].r + "," + this.form["font-effect-color"].g + "," + this.form["font-effect-color"].b + ")"
+        this.backgroundcolor = "rgb(" + this.form["background-color"].r + "," + this.form["background-color"].g + "," + this.form["background-color"].b + "," + this.form['background-color'].a + ")"
       }).catch(() => {
         this.$message.error("Request failed")
       })
