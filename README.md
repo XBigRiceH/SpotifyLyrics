@@ -24,15 +24,15 @@
 
 ### Screenshots - 程序截图
 
-![Unlocked](readme_images\1.jpg)
+![Unlocked](https://github.com/XBigRiceH/SpotifyLyrics/blob/master/readme_images/1.jpg)
 
-![Locked](readme_images\2.jpg)
+![Locked](https://github.com/XBigRiceH/SpotifyLyrics/blob/master/readme_images/1.jpg)
 
-![Win10+ToastNotice](readme_images\3.jpg)
+![Win10+ToastNotice](https://github.com/XBigRiceH/SpotifyLyrics/blob/master/readme_images/1.jpg)
 
-![WebSettingUI](readme_images\4.jpg)
+![WebSettingUI](https://github.com/XBigRiceH/SpotifyLyrics/blob/master/readme_images/1.jpg)
 
-![Running](readme_images\5.gif)
+![Running](https://github.com/XBigRiceH/SpotifyLyrics/blob/master/readme_images/1.jpg)
 
 
 
