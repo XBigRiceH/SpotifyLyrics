@@ -26,13 +26,13 @@
 
 ![Unlocked](https://github.com/XBigRiceH/SpotifyLyrics/blob/master/readme_images/1.jpg)
 
-![Locked](https://github.com/XBigRiceH/SpotifyLyrics/blob/master/readme_images/1.jpg)
+![Locked](https://github.com/XBigRiceH/SpotifyLyrics/blob/master/readme_images/2.jpg)
 
-![Win10+ToastNotice](https://github.com/XBigRiceH/SpotifyLyrics/blob/master/readme_images/1.jpg)
+![Win10+ToastNotice](https://github.com/XBigRiceH/SpotifyLyrics/blob/master/readme_images/3.jpg)
 
-![WebSettingUI](https://github.com/XBigRiceH/SpotifyLyrics/blob/master/readme_images/1.jpg)
+![WebSettingUI](https://github.com/XBigRiceH/SpotifyLyrics/blob/master/readme_images/4.jpg)
 
-![Running](https://github.com/XBigRiceH/SpotifyLyrics/blob/master/readme_images/1.jpg)
+![Running](https://github.com/XBigRiceH/SpotifyLyrics/blob/master/readme_images/5.gif)
 
 
 
