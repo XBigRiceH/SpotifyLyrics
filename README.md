@@ -62,7 +62,7 @@
 
 * Use the following command to package the .exe file - 使用以下指令打包.exe
   * ```bash
-      pyinstaller ./SpotifyLyrics.spec
-      ```
+    pyinstaller ./SpotifyLyrics.spec
+    ```
 
 * Now you could find your .exe file in folder `dist` - 可执行文件已打包到`dist`目录下
