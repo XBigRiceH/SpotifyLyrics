@@ -1,0 +1,14 @@
+<RCC>
+  <qresource prefix="/icon">
+    <file>icon/lock.png</file>
+    <file>icon/next.png</file>
+    <file>icon/pause.png</file>
+    <file>icon/play.png</file>
+    <file>icon/previous.png</file>
+    <file>icon/quit.png</file>
+    <file>icon/settings.png</file>
+    <file>icon/unlock.png</file>
+    <file>icon/user.png</file>
+    <file>icon/xh.png</file>
+  </qresource>
+</RCC>

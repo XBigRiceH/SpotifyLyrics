@@ -1,0 +1,147 @@
+<html lang="en">
+<meta charset="UTF-8">
+<meta content="IE=edge" http-equiv=X-UA-Compatible>
+<meta content="width=device-width,initial-scale=1" name="viewport">
+<style>
+    .copyright {
+        background-size: contain;
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        color: #9299ff;
+        height: 32px;
+        line-height: 32px;
+        cursor: help;
+        box-sizing: border-box;
+        white-space: nowrap;
+        font-family: Consolas, monospace;
+        font-size: 15px;
+        opacity: 1;
+        width: 160px
+}
+
+.background .left {
+    background: #e5e7ff;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 70%
+}
+
+.background .right {
+    background: #9299ff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 30%
+}
+
+.logo {
+    background: url(data:image/jpeg;base64,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) no-repeat center;
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    z-index: 3;
+    background-size: contain;
+    border-radius: 80px;
+    top: 50%;
+    margin-top: -60px;
+    left: 50%;
+    margin-left: -120px
+}
+
+.loginbox {
+    padding: 25px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    margin-top: -165px;
+    width: 320px;
+    height: 330px;
+    background: #fff;
+    z-index: 3;
+    left: 70%;
+    margin-left: -160px;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .05);
+    border-radius: 5px
+}
+
+.loginbox h1 {
+    font-weight: 200;
+    margin: 0 0 9px 10px;
+    color: #555
+}
+
+.loginbox h3 {
+    margin: 0 0 0 10px;
+    font-weight: 400;
+    color: #9299ff
+}
+
+
+@media screen and (max-width: 665px) {
+    .logo {
+        top: 50%;
+        left: 50%;
+        margin-left: -60px;
+        margin-top: -300px
+    }
+
+    .loginbox {
+        top: 50%;
+        left: 50%;
+        margin-top: -135px
+    }
+
+    .background .left {
+        width: 100%;
+        right: 0
+    }
+
+    .background .right {
+        display: none
+    }
+}</style>
+
+<title>SpotifyLyrics Login</title>
+<main id="SpotifyLyrics">
+    <div class="page page-login">
+        <div class="background">
+            <div class="left">
+                <div class="logo"></div>
+            </div>
+            <div class="right"></div>
+        </div>
+        <div class="loginbox">
+            <h1>Spotify Lyrics</h1>
+            <h3>
+                <br><br>
+                You've logged into Spotify successfully.
+                <br><br>
+                This page will close in <span id="countdown">5</span> seconds.
+            </h3>
+        </div>
+    </div>
+    <a class=copyright>By Hang 2022.12</a></main>
+<script>
+    const countdownElement = document.getElementById("countdown");
+    function countdown(time) {
+        countdownElement.innerHTML = time;
+        if (time === 0) {
+            window.opener = null;
+            window.close();
+        } else {
+            setTimeout(() => {
+                countdown(time - 1)
+            }, 1000);
+        }
+    }
+    window.onload = function () {
+        setTimeout(() => {
+                countdown(4)
+            }, 1000);
+    }
+</script>
