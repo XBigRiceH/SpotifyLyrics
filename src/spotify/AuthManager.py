@@ -107,7 +107,7 @@ class SpotifyAuthManager:
         while 1:
             if self.kill:
                 return
-            time.sleep(3500)
+            time.sleep(1800)
             self.real_refresh_user_token()
 
     def check_user_product(self):
