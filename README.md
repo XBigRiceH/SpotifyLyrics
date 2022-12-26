@@ -45,7 +45,7 @@
 * Use the following command to generate the `.spec` file - 使用以下指令创建 `.spec` 文件
 
   * ```bash
-    pyi-makespec --onefile --icon "F:/PythonProjects/SpotifyLyrics/src/resources/static/favicon.ico" --add-data "F:/PythonProjects/SpotifyLyrics/src/resources;resources/" --paths "F:/PythonProjects/SpotifyLyrics/src/lyrics" --paths "F:/PythonProjects/SpotifyLyrics/src/spotify" --paths "F:/PythonProjects/SpotifyLyrics/src/ui"  "F:/PythonProjects/SpotifyLyrics/src/SpotifyLyrics.py" --noconsole --hidden-import "plyer.playforms" --hidden-import "plyer.platforms.win" --hidden-import "plyer.platforms.win.notification" --hidden-import "plyer.platforms.win.libs"
+    pyi-makespec --onefile --icon "./resources/static/favicon.ico" --add-data "./resources;resources/" --paths "./lyrics" --paths "./spotify" --paths "./ui"  "./SpotifyLyrics.py" --noconsole --hidden-import "plyer.playforms" --hidden-import "plyer.platforms.win" --hidden-import "plyer.platforms.win.notification" --hidden-import "plyer.platforms.win.libs"
     ```
 
 * Locate line 8 and add following items to the list: `'./Constants.py', './Logger.py', './Settings.py', './Variables.py'` - 在第8行的第一个数组中加入以上几个内容
